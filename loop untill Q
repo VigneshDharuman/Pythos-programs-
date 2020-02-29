@@ -1,0 +1,5 @@
+while True :
+ n = str(input('enter a character or string : '))
+ if n.upper() =='Q' or n.upper() =='QUIT':
+    break
+print("loop ended")
