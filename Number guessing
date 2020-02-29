@@ -1,0 +1,16 @@
+import random
+n =  int(input("Guess a number between 1 ,100 in 5 chances : "))
+ran = random.randint(1,100)
+for i in range(1,6):
+  if n==ran:
+    print("your guess is correct")
+    break
+  else :
+     if n<ran:
+      print("your guess is little low")
+     elif n>ran:
+      print("your guess is little high")
+     if i == 5:
+      print("your failed")
+     else :
+      n=int(input("guess again : "))
